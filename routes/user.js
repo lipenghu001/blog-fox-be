@@ -129,7 +129,7 @@ exports.userInfo = (req, res) => {
 exports.currentUser = (req, res) => {
   let user = req.session.userInfo;
   if (user) {
-    user.avatar = 'http://p61te2jup.bkt.clouddn.com/WechatIMG8.jpeg';
+    user.avatar = 'http://cdn.friendlp.cn/1571303152930';
     user.notifyCount = 0;
     user.address = '江苏省';
     user.country = 'China';

@@ -1,13 +1,10 @@
-![项目结构图](https://upload-images.jianshu.io/upload_images/12890819-3348be07c69aa2b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![项目结构图](http://cdn.friendlp.cn/1571332375738)
 
 ## 前言
 
 blog-node 是采用了主流的前后端分离思想的，主里只讲 后端。
 
-效果请看 [https://friendlp.cn](https://friendlp.cn)
-
-项目详情请看这篇文章：
-[基于 node + express + mongodb 的 blog-node 项目文档说明](https://friendlp.cn/articleDetail?article_id=5bf8c57185e0f13af26e7d0d)
+效果请看 [http://friendlp.cn](http://friendlp.cn)
 
 ## 已经实现功能
 
@@ -73,7 +70,7 @@ npm start
 
 ### 管理员账号创建
 
-![](https://upload-images.jianshu.io/upload_images/12890819-67861a912768e646.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://cdn.friendlp.cn/1571306790685)
 
 管理后台的登录账号并不是 admin/user ，也不是搭建 mongodb 数据库时创建的 user 用户，这里的账号和密码要自己创建，至于怎样创建呢？
 
@@ -81,7 +78,7 @@ npm start
 
 如果是本地的可以像这样子创建，如果是服务器上的，请把 url 修改一下，
 
-![注册](https://upload-images.jianshu.io/upload_images/12890819-3772744f72b8ed3e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![注册](http://cdn.friendlp.cn/1571307105839)
 
 - 1.  url
 
@@ -93,12 +90,12 @@ http://127.0.0.1:3000/register
 
 ```
 {
- "name": "BiaoChenXuYing",
- "password": "888888",
- "email": "admin@qq.com",
- "phone": 1380013800,
+ "name": "zhangsan",
+ "password": "123456",
+ "email": "xxx@qq.com",
+ "phone": xxxxxxxxx,
  "type": 0,
- "introduce":"加班到天明，学习到昏厥!!! 微信公众号：【 BiaoChenXuYing 】，分享 WEB 全栈开发等相关的技术文章，热点资源，全栈程序员的成长之路。"
+ "introduce":"对自己的描述。"
 }
 ```
 
@@ -108,34 +105,13 @@ http://127.0.0.1:3000/register
 
 **项目地址：**
 
-> [前台展示: https://github.com/abughu/blog-react](https://github.com/abughu/blog-react)
+> [前台展示: https://github.com/abughu/blog-react](https://github.com/lipenghu001/blog-fox-fe)
 
-> [前台展示: https://github.com/abughu/blog-vue-typescript](https://github.com/abughu/blog-vue-typescript)
+> [管理后台：https://github.com/abughu/blog-react-admin](https://github.com/lipenghu001/blog-fox-admin)
 
-> [管理后台：https://github.com/abughu/blog-react-admin](https://github.com/abughu/blog-react-admin)
-
-> [后端：https://github.com/abughu/blog-node](https://github.com/abughu/blog-node)
-
-> [blog：https://github.com/abughu/blog](https://github.com/abughu/blog)
+> [后端：https://github.com/abughu/blog-node](https://github.com/lipenghu001/blog-fox-be)
 
 **本博客系统的系列文章：**
 
-- 1. [react + node + express + ant + mongodb 的简洁兼时尚的博客网站](https://friendlp.cn/articleDetail?article_id=5bf57a8f85e0f13af26e579b)
-- 2. [react + Ant Design + 支持 markdown 的 blog-react 项目文档说明](https://friendlp.cn/articleDetail?article_id=5bf6bb5e85e0f13af26e57b7)
-- 3. [基于 node + express + mongodb 的 blog-node 项目文档说明](https://friendlp.cn/articleDetail?article_id=5bf8c57185e0f13af26e7d0d)
-- 4. [服务器小白的我,是如何将 node+mongodb 项目部署在服务器上并进行性能优化的](https://friendlp.cn/articleDetail?article_id=5bfa728bb54f044b4f9da240)
-- 5. [github 授权登录教程与如何设计第三方授权登录的用户表](https://friendlp.cn/articleDetail?article_id=5c7bd34e42b55e2ecc90976d)
-- 6. [一次网站的性能优化之路 -- 天下武功，唯快不破](https://friendlp.cn/articleDetail?article_id=5c8ca2d3b87b8a04f1860c9a)
-- 7. [Vue + TypeScript + Element 搭建简洁时尚的博客网站及踩坑记](https://friendlp.cn/articleDetail?article_id=5c9d8ce5f181945ddd6b0ffc)
-- 8. [前端解决第三方图片防盗链的办法 - html referrer 访问图片资源403问题](https://friendlp.cn/articleDetail?article_id=5cfcc6798090bd3c84138a08)
-
 
 ## 最后
-
-如果您觉得本项目和文章不错或者对你有所帮助，请给个星吧，你的肯定就是我继续创作的最大动力。
-
-鉴于问问题的人有点多，笔者时间有限，处理不过来，大家可以加入 QQ 群：**186045338**，加群暗号：**全栈修炼** ，一起相互交流学习。
-
-笔者经常在这里 BB：
-
-![全栈修炼](https://upload-images.jianshu.io/upload_images/12890819-9399d149e09f638e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
