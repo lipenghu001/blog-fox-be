@@ -1,6 +1,7 @@
 import Article from '../models/article';
 import User from '../models/user';
 import { responseClient, timestampToTime } from '../util/util';
+import qiniu from 'qiniu'
 
 exports.addArticle = (req, res) => {
   // if (!req.session.userInfo) {
@@ -371,6 +372,28 @@ exports.getArticleListAdmin = (req, res) => {
     }
   });
 };
+
+// 
+exports.queryUploadToken = (req, res) => {
+  console.log('尝试获取token')
+  let responseData = {
+    uploadToken: ''
+  }
+  // generate mac
+  const accessKey = '7pzYYZoJ3upEP7-3Zik7obTqXb3y9XCbUG-p38Jz';
+  const secretKey = '583Zx8rSSpxjTq-pWPq_cR8ZlyW76qIvnnIvckGo';
+  const mac = new qiniu.auth.digest.Mac(accessKey, secretKey);
+
+  // genetate uploadToken
+  let options = {
+    scope: 'firstlove-fox',
+  };
+  let putPolicy = new qiniu.rs.PutPolicy(options);
+  let uploadToken=putPolicy.uploadToken(mac);
+  console.log(typeof(uploadToken));
+  responseData.uploadToken = uploadToken
+  responseClient(res, 200, 0, '后端响应了token的请求!', responseData);
+}
 
 // 文章点赞
 exports.likeArticle = (req, res) => {

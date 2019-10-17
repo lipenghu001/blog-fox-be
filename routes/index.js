@@ -33,6 +33,7 @@ module.exports = app => {
 	app.post('/delArticle', article.delArticle);
 	app.get('/getArticleList', article.getArticleList);
 	app.get('/getArticleListAdmin', article.getArticleListAdmin);
+	app.get('/queryUploadToken', article.queryUploadToken);
 	app.post('/getArticleDetail', article.getArticleDetail);
 	app.post('/likeArticle', article.likeArticle);
 
